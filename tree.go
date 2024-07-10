@@ -1117,7 +1117,7 @@ func (n *LeafNode) updateCn(index byte, value []byte, c *Point) error {
 		diff      Point
 		poly      [NodeWidth]Fr
 	)
-
+	cfg = GetConfig()
 	// Optimization idea:
 	// If the value is created (i.e. not overwritten), the leaf marker
 	// is already present in the commitment. In order to save computations,
