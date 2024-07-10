@@ -57,6 +57,7 @@ var (
 func init() {
 	FrZero.SetZero()
 	FrOne.SetOne()
+	cfg = GetConfig()
 }
 
 type IPAConfig struct {
